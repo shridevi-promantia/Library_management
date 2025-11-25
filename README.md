@@ -38,3 +38,5 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 ### License
 
 mit
+Minor note: tested git status flow - Tuesday 25 November 2025 02:13:30 PM IST
+This change is from new-update branch
