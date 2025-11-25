@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../../../../../tmp/tmp-87353-8Rg5kRs6j0W0/library_management/library_management/public/js/style.bundle.css"],
+  "sourcesContent": ["html, body {\n  background-color: #23bb30 !important;\n  color: #dd2929;\n  font-family: Arial, sans-serif;\n}\n\nh1 {\n  color: #090808 !important;\n}"],
+  "mappings": ";AAAA;AAAA;AACE;AACA;AACA;AAAA;AAGF;AACE;AAAA;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../apps/library_management/library_management/public/js/main.bundle.js"],
+  "sourcesContent": ["console.log(\"Hello from Frappe Asset Bundling!\");\ndocument.body.style.backgroundColor = \"#f0f9ff\";\n"],
+  "mappings": ";;AAAA,UAAQ,IAAI,mCAAmC;AAC/C,WAAS,KAAK,MAAM,kBAAkB;",
+  "names": []
+}
