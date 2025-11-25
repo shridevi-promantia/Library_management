@@ -63,7 +63,7 @@ app_license = "mit"
 # role_home_page = {
 # 	"Role": "home_page"
 # }
-
+get_website_user_home_page = "library_management.utils.get_home_page"
 # Generators
 # ----------
 
@@ -139,6 +139,7 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
 
 # Scheduled Tasks
 # ---------------
@@ -245,3 +246,67 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [["dt", "=", "Note"]],
+        "module": "Library Management"
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [["doc_type", "=", "Note"]],
+        "module": "Library Management"
+    },
+    {
+        "dt": "Client Script",
+        "filters": [["dt", "=", "Note"]],
+        "module": "Library Management"
+    },
+    {
+        "dt": "Server Script",
+        "filters": [["reference_doctype", "=", "Note"]],
+        "module": "Library Management"
+    },
+    {
+        "dt": "Email Template",
+        "filters": [["name", "=", "Note created Template"]],
+    },
+    {
+        "dt": "Notification",
+        "filters": [["name", "=", "New Note Created"]],
+    },
+    {
+        "dt": "Role",
+        "filters": [["role_name", "=", "Employee"]],
+    },
+    {
+        "dt": "Workspace",
+        "filters": [["name", "=", "Library Dashboard"]],
+    },
+    {
+        "dt": "Translation",
+        "filters": [["source_text", "=", "welcome to the library"]]
+    }
+]
+
+# doctype_js = {
+#     "Purchase Order": "public/js/purchase_order.js"
+# }
+
+app_include_js=["/assests/library_managment/js/purchase_order.js"]
+
+
+#after_install = "library_management.install.after_install"
+
+# override_doctype_class = {
+#     "ToDo": "library_management.overrides.todo.CustomToDo"
+# }
+# doctype_js = {
+#     "ToDo": "public/js/todo.js"
+# }
+override_whitelisted_methods = {
+    "frappe.client.get_count": "library_management.whitelisted.custom_get_count"
+}
+
+# This is a test update in new-update branch
